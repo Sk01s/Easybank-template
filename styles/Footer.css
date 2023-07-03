@@ -1,0 +1,69 @@
+footer {
+  background-color: var(--color-dark-blue);
+  display: flex;
+  padding: 2rem 5rem;
+  justify-content: space-between;
+}
+
+footer > div {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer > div:first-child > .social {
+  display: flex;
+  gap: 0.7rem;
+}
+footer > div:first-child > .social > svg {
+  cursor: pointer;
+}
+footer > div:first-child > .social > svg > path {
+  transition: 200ms fill ease-in-out;
+  -webkit-transition: 200ms fill ease-in-out;
+  -moz-transition: 200ms fill ease-in-out;
+  -ms-transition: 200ms fill ease-in-out;
+  -o-transition: 200ms fill ease-in-out;
+}
+footer > div:first-child > .social > svg:hover path {
+  fill: var(--color-lime-green);
+}
+footer ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+footer ul li {
+  color: var(--color-white);
+  font-weight: 300;
+  font-size: 0.9rem;
+  transition: 200ms color ease-in-out;
+  -webkit-transition: 200ms color ease-in-out;
+  -moz-transition: 200ms color ease-in-out;
+  -ms-transition: 200ms color ease-in-out;
+  -o-transition: 200ms color ease-in-out;
+}
+footer ul li:hover {
+  color: var(--color-bright-cyan);
+}
+footer > div:last-child button {
+  max-width: 10rem;
+}
+footer > div:last-child span {
+  color: var(--color-grayish-blue);
+}
+@media (max-width: 728px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div:last-child {
+    align-items: center;
+  }
+}

@@ -1,0 +1,87 @@
+.landing {
+  background-color: var(--color-very-light-gray);
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  justify-content: space-between;
+  background-image: url(/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-position: 40vw -28vh;
+}
+.landing .text {
+  min-width: 500px;
+  max-width: 90vw;
+}
+
+.landing .text h1 {
+  font-weight: 400;
+  max-width: 300px;
+  line-height: 2.5rem;
+  font-size: 2.4rem;
+  padding-bottom: 0.8rem;
+}
+.landing .text p {
+  color: var(--color-grayish-blue);
+  line-height: 1.4rem;
+  max-width: 400px;
+  padding-bottom: 1rem;
+}
+.landing .text button {
+  padding-left: 0.5rem;
+}
+.landing .image {
+  position: relative;
+}
+.landing .image img {
+  position: relative;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 920px) {
+  .landing {
+    height: 120vh;
+    flex-direction: column-reverse;
+    padding: 0;
+    background: none;
+  }
+  .landing .text {
+    min-width: auto;
+    max-width: 100vw;
+    padding: 2rem;
+  }
+  .landing .text h1 {
+    font-size: 1, 7rem;
+    margin: 0 auto;
+  }
+  .landing .text button {
+    margin: 0 auto;
+    display: block;
+    width: 7rem;
+  }
+
+  .landing .image {
+    width: 100%;
+    position: relative;
+  }
+  .landing .image::after {
+    position: absolute;
+    content: "";
+    top: 0rem;
+    left: 0rem;
+    background-size: contain;
+    width: calc(100vw + 20rem);
+    height: 100%;
+    background-image: url(/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .landing .image img {
+    scale: 1;
+    height: 100%;
+    max-width: 100vw;
+    padding: 0 2rem;
+  }
+}
