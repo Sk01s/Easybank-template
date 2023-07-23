@@ -4,7 +4,7 @@ import phonePhoto from "../images/image-mockups.png";
 import "../styles/Landing.css";
 export const landing = () => {
   return (
-    <div className="landing">
+    <div className="landing" id="home">
       <div className="text">
         <h1>Next generation digital banking</h1>
         <p>

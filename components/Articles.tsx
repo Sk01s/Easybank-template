@@ -5,9 +5,10 @@ import restaurtantImg from "../images/image-restaurant.jpg";
 import planImg from "../images/image-plane.jpg";
 import confettiImg from "../images/image-confetti.jpg";
 import "../styles/Articles.css";
+import Link from "next/link";
 const Articles = () => {
   return (
-    <div className="articles-section">
+    <div className="articles-section" id="blog">
       <h2 className="title">Last Articles</h2>
       <div className="articles-store">
         <div className="article-box">
@@ -15,7 +16,7 @@ const Articles = () => {
           <div className="text">
             <p className="auther">By Claire Robinson</p>
             <h3 className="title">
-              Receive money in any currency with on fees
+              <Link href="">Receive money in any currency with on fees</Link>
             </h3>
             <p className="articles-description">
               The world is getting smaller and we are becoming more mobile. So
@@ -28,7 +29,7 @@ const Articles = () => {
           <div className="text">
             <p className="auther">By Wilson Hutton</p>
             <h3 className="title">
-              Treat yourself without worrying about money
+              <Link href="">Treat yourself without worrying about money</Link>
             </h3>
             <p>
               Our simple budgeting feature allows you to separate out your
@@ -40,7 +41,9 @@ const Articles = () => {
           <Image alt="plane image " src={planImg} />
           <div className="text">
             <p className="auther">By Wilson Hutton</p>
-            <h3 className="title">Take your Easybank card wherever you go </h3>
+            <h3 className="title">
+              <Link href="">Take your Easybank card wherever you go </Link>
+            </h3>
             <p>
               We want you to enjoy your travels.This is why we do not charge any
               fees on purchases while you are abroad . We will even show you
@@ -53,7 +56,7 @@ const Articles = () => {
           <div className="text">
             <p className="auther"> By Claire Robinson</p>
             <h3 className="title">
-              Our inivite-only Beta accounts are now live!
+              <Link href="">Our inivite-only Beta accounts are now live!</Link>
             </h3>
             <p>
               After a lot of hard work by the whole team , we are excited to

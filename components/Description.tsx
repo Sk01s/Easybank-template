@@ -8,7 +8,7 @@ import onlineIcon from "../images/icon-online.svg";
 
 const Description = () => {
   return (
-    <div className="description">
+    <div className="description" id="about">
       <div className="text">
         <h2 className="title">Why choose Easybank?</h2>
         <p>
