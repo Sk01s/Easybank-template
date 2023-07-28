@@ -9,7 +9,7 @@
 }
 .articles-section .articles-store {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 .articles-section .articles-store .article-box {
@@ -49,4 +49,9 @@
 
 .articles-section .articles-store .article-box h3:hover {
   color: var(--color-bright-cyan);
+}
+@media (max-width: 728px) {
+  .articles-section {
+    padding: 2rem;
+  }
 }
